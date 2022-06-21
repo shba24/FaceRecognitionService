@@ -4,3 +4,5 @@ numpy
 face_recognition
 opencv-python
 ffmpeg
+botocore
+awslambdaric

@@ -75,7 +75,6 @@ def face_recognition_handler(event, context):
     try:
         response = s3_client.get_object(Bucket=bucket, Key=key)
         print('CONTENT TYPE: ' + response['ContentType'])
-        print(response['ContentType'])
     except Exception as e:
         print(e)
         print(
