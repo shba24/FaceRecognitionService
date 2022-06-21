@@ -4,7 +4,7 @@ import csv
 import os
 import pickle
 import face_recognition
-import urllib3
+import urllib.parse
 import boto3
 from botocore.exceptions import ClientError
 
@@ -63,7 +63,7 @@ def face_recognition_handler(event, context):
     bucket = event['Records'][0]['s3']['bucket']['name']
 
     # Getting the item: video name e.g. test_1.mp4
-    key = urllib3.parse.unquote_plus(
+    key = urllib.parse.unquote_plus(
         event['Records'][0]['s3']['object']['key'],
         encoding='utf-8')
 
