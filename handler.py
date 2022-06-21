@@ -20,13 +20,8 @@ s3_client = boto3.client(
     aws_access_key_id=AWS_SERVER_PUBLIC_KEY,
     aws_secret_access_key=AWS_SERVER_SECRET_KEY
 )
-dynamodb_client = boto3.client(
-    'dynamodb',
-    region_name='us-east-1',
-    aws_access_key_id=AWS_SERVER_PUBLIC_KEY,
-    aws_secret_access_key=AWS_SERVER_SECRET_KEY
-)
-table = dynamodb_client.Table('students')
+dynamodb_resource = session.resource('dynamodb', region_name='us-east-1')
+table = dynamodb_resource.Table('students')
 input_bucket = 'cse546-final-input-bucket'
 output_bucket = 'cse546-final-output-bucket'
 
