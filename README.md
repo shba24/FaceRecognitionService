@@ -11,5 +11,5 @@ Elastic application for Face Recognition Service
 - AWS Secret Access Key: "7auI9c6dICF9Ae6yvhFOj4Zq9T3dY/aIr4UbrE+L"
 
 ## S3 bucket names
-Input Bucket: cse546-final-input-bucket
-Output Bucket: cse546-final-output-bucket
+- Input Bucket: cse546-final-input-bucket
+- Output Bucket: cse546-final-output-bucket
