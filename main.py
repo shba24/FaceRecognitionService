@@ -5,8 +5,8 @@ import logging
 import boto3
 from botocore.exceptions import ClientError
 
-AWS_SERVER_PUBLIC_KEY="AKIAVPMB4KPNQN4VJRU5"
-AWS_SERVER_SECRET_KEY="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"
+AWS_SERVER_PUBLIC_KEY=""
+AWS_SERVER_SECRET_KEY=""
 session = boto3.Session(
     aws_access_key_id=AWS_SERVER_PUBLIC_KEY,
     aws_secret_access_key=AWS_SERVER_SECRET_KEY
